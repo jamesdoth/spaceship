@@ -1,0 +1,6 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/gusto/Desktop/CSharp/Spaceship/Content/asteroid.png","C:/Users/gusto/Desktop/CSharp/Spaceship/Content/bin/DesktopGL/Content/asteroid.xnb","TextureProcessor","Texture2DContent",17495,53893,0.1283744
+"C:/Users/gusto/Desktop/CSharp/Spaceship/Content/ship.png","C:/Users/gusto/Desktop/CSharp/Spaceship/Content/bin/DesktopGL/Content/ship.xnb","TextureProcessor","Texture2DContent",3015,27285,0.0027124
+"C:/Users/gusto/Desktop/CSharp/Spaceship/Content/space.png","C:/Users/gusto/Desktop/CSharp/Spaceship/Content/bin/DesktopGL/Content/space.xnb","TextureProcessor","Texture2DContent",1018006,12582997,0.3335543
+"C:/Users/gusto/Desktop/CSharp/Spaceship/Content/spaceFont.spritefont","C:/Users/gusto/Desktop/CSharp/Spaceship/Content/bin/DesktopGL/Content/spaceFont.xnb","FontDescriptionProcessor","SpriteFontContent",2065,136223,0.1153917
+"C:/Users/gusto/Desktop/CSharp/Spaceship/Content/timerFont.spritefont","C:/Users/gusto/Desktop/CSharp/Spaceship/Content/bin/DesktopGL/Content/timerFont.xnb","FontDescriptionProcessor","SpriteFontContent",2065,70687,0.0236271
