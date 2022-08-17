@@ -53,7 +53,10 @@ namespace Spaceship
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            player.shipUpdate(gameTime);
+            if (gameController.inGame)
+            {
+                player.shipUpdate(gameTime);
+            }
             gameController.conUpdate(gameTime);
 
             for (int i = 0; i < gameController.asteroids.Count; i++)
