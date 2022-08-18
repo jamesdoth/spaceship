@@ -31,6 +31,9 @@ namespace Spaceship
                 {
                     inGame = true;
                     totalTime = 0;
+                    timer = 2;
+                    maxTime = 2;
+                    nextSpeed = 200;
                 }
             }
 

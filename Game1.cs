@@ -98,7 +98,7 @@ namespace Spaceship
                 _spriteBatch.DrawString(gameFont, menuMessage, new Vector2(halfWidth - sizeOfText.X/2, 200), Color.White);
             }
 
-            _spriteBatch.DrawString(timerFont, "Time: " + Math.Floor(gameController.totalTime), new Vector2(0,0), Color.White);
+            _spriteBatch.DrawString(timerFont, "Time: " + Math.Floor(gameController.totalTime).ToString(), new Vector2(0,0), Color.White);
 
             _spriteBatch.End();
 
