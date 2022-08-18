@@ -80,6 +80,14 @@ namespace Spaceship
                 _spriteBatch.Draw(asteroidSprite, new Vector2(gameController.asteroids[i].position.X - gameController.asteroids[i].radius, gameController.asteroids[i].position.Y - gameController.asteroids[i].radius), Color.White);
             }
 
+            if (gameController.inGame == false)
+            {
+                string menuMessage = "Press Enter to Begin!";
+                Vector2 sizeOfText = gameFont.MeasureString(menuMessage);
+                int halfWidth = _graphics.PreferredBackBufferWidth / 2;
+                _spriteBatch.DrawString(gameFont, menuMessage, new Vector2(halfWidth - sizeOfText.X/2, 200), Color.White);
+            }
+
             _spriteBatch.End();
 
             base.Draw(gameTime);
