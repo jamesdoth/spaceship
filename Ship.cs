@@ -9,6 +9,7 @@ namespace Spaceship
         static public Vector2 defaultPosition = new Vector2(640, 360);
         public Vector2 position = defaultPosition;
         public int speed = 240;
+        public int radius = 30;
 
         public void shipUpdate(GameTime gameTime)
         {

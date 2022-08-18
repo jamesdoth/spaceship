@@ -1,4 +1,6 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using System.Xml.Linq;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -62,6 +64,14 @@ namespace Spaceship
             for (int i = 0; i < gameController.asteroids.Count; i++)
             {
                 gameController.asteroids[i].asteroidUpdate(gameTime);
+
+                int sum = gameController.asteroids[i].radius + player.radius;
+                if (Vector2.Distance(gameController.asteroids[i].position, player.position) < sum)
+                {
+                    gameController.inGame = false;
+                    player.position = Ship.defaultPosition;
+                    gameController.asteroids.Clear();
+                }
             }
 
             base.Update(gameTime);
@@ -87,6 +97,8 @@ namespace Spaceship
                 int halfWidth = _graphics.PreferredBackBufferWidth / 2;
                 _spriteBatch.DrawString(gameFont, menuMessage, new Vector2(halfWidth - sizeOfText.X/2, 200), Color.White);
             }
+
+            _spriteBatch.DrawString(timerFont, "Time: " + Math.Floor(gameController.totalTime), new Vector2(0,0), Color.White);
 
             _spriteBatch.End();
 
